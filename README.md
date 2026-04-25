@@ -1,20 +1,35 @@
-# Groundwater Quality Assessment in Jiyuan Plain using Stacking Ensemble Learning
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+# Groundwater Quality Assessment using Stacking Ensemble Learning
 
 This repository contains the source code for the paper:
 
-> **"Groundwater quality evolution in Jiyuan Plain, China: an approach combining DRASTIC, PCA, EWQI, and Stacking ensemble learning"**  
-> (your paper citation)
+> **"Groundwater Quality Evolution in Jiyuan Plain: An Approach Combining EWQI, PCA, and Stacking Ensemble Learning"**
 
-## 📖 Overview
+All models are implemented in Jupyter Notebooks (`.ipynb`) using Python 3.9.13.
 
-This study evaluates the quality of shallow groundwater in the Jiyuan Plain (Henan Province, China) using water samples. We combine:
-- **EWQI** (Entropy‑Weighted Quality Index) for comprehensive water quality assessment.
-- **PCA** (Principal Component Analysis) for pollution source identification.
-- **DRASTIC** parameters (R, A, S, I, C) for vulnerability mapping.
-- **Stacking ensemble machine learning** to predict EWQI and quantify contributions of hydrochemical components.
+## 📁 Repository Structure
 
-All codes are written in **Python 3.9.13** and executed in **Jupyter Notebook** (`.ipynb`). The main libraries include scikit‑learn, XGBoost, CatBoost, pandas, numpy, and matplotlib.
+| File | Model |
+|------|-------|
+| `Stacking.ipynb` | **Stacking ensemble model** (Level-0: RF, XGBoost, SVR; Level-1: Linear Regression) |
+| `Random Forest.ipynb` | Random Forest Regressor |
+| `Xgboost.ipynb` | XGBoost Regressor |
+| `Catboost.ipynb` | CatBoost Regressor |
+| `GBDT.ipynb` | Gradient Boosting Decision Tree |
+| `Adaboost.ipynb` | AdaBoost Regressor |
+| `Artificial Network.ipynb` | Multi‑layer Perceptron (MLP) |
+| `Decision Tree.ipynb` | Decision Tree Regressor |
+| `SVR.ipynb` | Support Vector Regressor |
+
+Each notebook includes:
+- Data preprocessing (EWQI calculation, PCA)
+- Hyperparameter tuning (grid search / random search with 5‑fold cross‑validation)
+- Model evaluation (R², MAE, RMSE)
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/109301/groundwater-ml-codes-public.git
+cd groundwater-ml-codes-public
 
 
