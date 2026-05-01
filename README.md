@@ -19,7 +19,7 @@ All models are implemented in Jupyter Notebooks (`.ipynb`) using Python 3.9.13.
 | `Artificial Network.ipynb` | Multi‑layer Perceptron (MLP) |
 | `Decision Tree.ipynb` | Decision Tree Regressor |
 | `SVR.ipynb` | Support Vector Regressor |
-
+| `PCA.ipynb` | PCA |
 Each notebook includes:
 - Data preprocessing (EWQI calculation, PCA)
 - Hyperparameter tuning (grid search / random search with 5‑fold cross‑validation)
