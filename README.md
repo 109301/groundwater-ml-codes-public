@@ -2,7 +2,7 @@
 
 This repository contains the source code for the paper:
 
-> **"Groundwater Quality Evolution in Jiyuan Plain: An Approach Combining EWQI, PCA, and Stacking Ensemble Learning"**
+> **"Unveiling the drivers of groundwater quality in an industrial plain: an integrated hydrogeochemical and stacking ensemble learning approach"**
 
 All models are implemented in Jupyter Notebooks (`.ipynb`) using Python 3.9.13.
 
